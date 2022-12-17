@@ -473,7 +473,7 @@ ul li {
   margin-bottom: 0rem;
   text-align: center;
   color: #fff;
-  background: #202021 no-repeat center center;
+  background: #b80135 no-repeat center center;
   background-size: cover;
 }
 
@@ -501,7 +501,7 @@ ul li {
 /* The details of your blog. Defined in ghost/settings/ */
 .blog-title {
   margin: 10px 0 10px 0;
-  font-size: 6.5rem;
+  font-size: 5rem;
   letter-spacing: -1px;
 }
 
