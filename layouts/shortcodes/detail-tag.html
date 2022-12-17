@@ -1,0 +1,35 @@
+<style>
+details h4 {
+  display: block;
+}
+
+details h4:hover, details h4:active{
+	color: #3d8df5;
+	cursor: pointer;
+}
+
+details h4::before {
+	margin-right: 0.5rem;
+	padding: 0.3rem;
+	display: inline-block;
+	transition: 0.7s;
+	content: '\203A'; /* chevron */
+}
+details[open] h4 {
+	color: #0c6ce9;
+}
+
+details[open] h4::before {
+  transform: rotate(90deg);
+  margin-bottom: 0.5rem;
+}
+</style>
+<script>
+document.querySelectorAll('details').forEach((D,_,A)=>{
+  D.ontoggle =_=>{ if(D.open) A.forEach(d =>{ if(d!=D) d.open=false })}
+})
+</script>
+<details>
+  <summary><h4>{{ (.Get 0) | markdownify }}</h4></summary>
+  {{ .Inner | markdownify }}
+</details>

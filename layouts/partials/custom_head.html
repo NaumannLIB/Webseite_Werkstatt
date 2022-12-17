@@ -1,0 +1,147 @@
+<!-- A partial to be overwritten by the user.
+     Its content will appear before the closing </head>-tag -->
+
+<!-- Custom CSS via inline styles
+     You may use this template to add custom CSS to your site like so: -->
+
+<style>
+	 /* Links */
+     a:hover {
+         color: #3154bd;
+     }
+
+     /* Header Buttons on Startpage */
+     a.btn {
+         color: white;
+          background-color: #3370c2;
+     }
+     a.btn:hover {
+          background-color: #3154bd;
+     }
+
+     /* Scroll Menu on Startpage */
+	 a.fn-item {
+          color: white;
+     }
+     a.fn-item.active {
+          color: #0c6ce9;
+     }
+     a.fn-item:hover {
+          color: #3d8df5;
+     }
+
+     /* Content / Sections */
+     .post-holder.odd {
+          background: #1b1c1e;
+     }
+     .post-holder {
+          background: #283e71;
+		  color: white;
+     }
+	 
+	.vertical .inner {
+		position: relative;
+		width: 80%;
+		max-width: 700px;
+		margin: 0 auto;
+		margin-top: -15%;
+	}
+	
+     body {
+          color: #3A4145;
+     }
+
+     /* Footer */
+     .site-footer {
+          color: #BBC7CC;
+          background-color: #1b1c1e;
+     }
+	
+	#FotoWerkstatt
+	{
+		border-radius: 5px;
+	}
+	
+	.wrap {
+	width: 100%;
+	}
+
+	.floatleftmap, .floatrightmap {
+		float:left;
+		width: 30%;
+		margin-bottom: 20px;
+	}
+
+	.floatrightmap {
+		width: 70%;
+		text-align: center;
+	}
+	
+	.address {
+		font-style:italic;
+	}
+
+	.floatleftcontact {
+		float:left;
+		width: 50%;
+		text-align: center;
+		font-style:italic;
+	}
+
+	.floatrightcontact {
+		float:right;
+		width: 50%;
+	}
+	
+	#object-logo {
+		position: relative;
+		width: 100%;
+	}
+	
+	#qrcode {
+		max-height:250px
+	}
+@media only screen and (max-width: 1130px) {
+  .fixed-nav {
+    background: #1b1c1e;
+	}
+	
+	.vertical .inner {
+		margin-top: -5%;
+	}
+
+}
+</style>
+
+<!-- Custom CSS via "custom.css"-file
+     If you would rather place your custom CSS into
+     a separate file, create a "custom.css" in your
+     local "static/css"-directory. Then add a <link>-tag
+     referencing your "custom.css" like so: -->
+
+<!-- <link rel="stylesheet" href='{{ "css/custom.css" | absURL }}'> -->
+
+<!-- Custom CSS: Color Codes
+     You may checkout https://htmlcolorcodes.com/ to get those
+     weird color codes (like "#22343A") ;-). -->
+
+<!-- Custom link-tags for different icons
+     Generated via https://favicon.io/favicon-generator/ -->
+
+<link
+  rel="apple-touch-icon"
+  sizes="180x180"
+  href="{{ "images/apple-touch-icon.png" | absURL }}"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="32x32"
+  href="{{ "images/favicon-32x32.png" | absURL }}"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="16x16"
+  href="{{ "images/favicon-16x16.png" | absURL }}"
+/>

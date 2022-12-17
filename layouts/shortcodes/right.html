@@ -1,0 +1,12 @@
+{{$to := "" }}
+{{ if ne (.Get "currentyear") ""}}
+  {{$to = now.Year }}
+{{ else if ne (.Get "year") ""}}
+  {{$to = (.Get "year") }}
+{{end}}
+<div class="container right">
+  <div class="content">
+    <h3>{{$to}}</h3>
+    <p>{{.Inner}}</p>
+  </div>
+</div>
