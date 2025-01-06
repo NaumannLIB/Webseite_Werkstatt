@@ -1,5 +1,6 @@
 ---
 weight: 2
+header_menu: false
 ---
 <h5>Haftungsausschluss:</h5>
 

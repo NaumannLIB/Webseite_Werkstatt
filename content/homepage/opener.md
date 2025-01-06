@@ -1,9 +1,9 @@
 ---
-title: "Wilkommen"
+title: "Willkommen"
 weight: 1
 ---
 
-Herzlich Wilkommen auf der Webseite des KFZ-Meisterbetriebs Naumann.
+Herzlich Willkommen auf der Webseite des KFZ-Meisterbetriebs Naumann.
 
 <img id="FotoWerkstatt" src="images/Werkstatt.jpg" alt="KFZ-Meisterbetrieb Naumann">
 

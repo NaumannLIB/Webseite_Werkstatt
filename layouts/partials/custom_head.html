@@ -9,68 +9,19 @@
      a:hover {
          color: #3154bd;
      }
-	 /* Background Header */
-	 #site-head {
-         position: relative;
-         display: table;
-         width: 100%;
-         height: 100%;
-         margin-bottom: 0rem;
-         text-align: center;
-         color: #fff;
-         background: #202021 no-repeat center center;
-         background-size: cover;
-     }
 	 
-	 .blog-title {
-         font-size:  clamp(2rem, 8vw, 6.5rem);
-     }
-	
-     /* Header Buttons on Startpage */
-     a.btn {
-         color: white;
-          background-color: #3370c2;
-     }
-     a.btn:hover {
-          background-color: #3154bd;
-     }
-
      /* Scroll Menu on Startpage */
-	 a.fn-item {
-          color: white;
-     }
-     a.fn-item.active {
-          color: #0c6ce9;
-     }
-     a.fn-item:hover {
-          color: #3d8df5;
-     }
 
-     /* Content / Sections */
-     .post-holder.odd {
-          background: #1b1c1e;
-     }
-     .post-holder {
-          background: #283e71;
-		  color: white;
-     }
-	 
 	.vertical .inner {
 		position: relative;
 		width: 80%;
 		max-width: 700px;
 		margin: 0 auto;
-		margin-top: -15%;
+		margin-top: -16%;
 	}
 	
      body {
           color: #3A4145;
-     }
-
-     /* Footer */
-     .site-footer {
-          color: #BBC7CC;
-          background-color: #1b1c1e;
      }
 	
 	#FotoWerkstatt
@@ -92,10 +43,6 @@
 		width: 70%;
 		text-align: center;
 	}
-	
-	.address {
-		font-style:italic;
-	}
 
 	.floatleftcontact {
 		float:left;
@@ -109,23 +56,20 @@
 		width: 50%;
 	}
 	
-	#object-logo {
-		position: relative;
-		width: 100%;
-	}
-	
 	#qrcode {
 		max-height:250px
 	}
-@media only screen and (max-width: 1130px) {
-  .fixed-nav {
-    background: #1b1c1e;
-	}
-	
-	.vertical .inner {
-		margin-top: -5%;
-	}
 
+    /*
+    --section-light-text-color: #3a4145!important;
+    --section-light-bg-color: #ffdb8c!important;
+    --section-dark-bg-color: #035e00!important;
+    */
+
+     /* define list element for unnumbered lists, leave empty for default list element */
+     /* fa-asterisk is the default icon if this variable definition is missing completely */
+     --ul-li-icon: fa-dashcube;     /* this sets fa-dashcube as list icon */
+     --ul-li-icon: ;                /* this sets the default html list icon */
 }
 </style>
 
@@ -144,20 +88,8 @@
 <!-- Custom link-tags for different icons
      Generated via https://favicon.io/favicon-generator/ -->
 
-<link
-  rel="apple-touch-icon"
-  sizes="180x180"
-  href="{{ "images/apple-touch-icon.png" | absURL }}"
-/>
-<link
-  rel="icon"
-  type="image/png"
-  sizes="32x32"
-  href="{{ "images/favicon-32x32.png" | absURL }}"
-/>
-<link
-  rel="icon"
-  type="image/png"
-  sizes="16x16"
-  href="{{ "images/favicon-16x16.png" | absURL }}"
-/>
+{{ with resources.Get "images/apple-touch-icon.png" }}<link rel="apple-touch-icon" sizes="180x180" href="{{ .RelPermalink }}" />{{ end }}
+{{ with resources.Get "images/favicon.svg" }}<link rel="icon" type="image/svg+xml" href="{{ .RelPermalink }}" />{{ end }}
+{{ range seq 9 4 }}{{ $size := pow 2 . }}{{ $file := replace "images/favicon-##x##.png" "##" $size }}{{ with resources.Get $file }}
+<link rel="icon" type="{{ .MediaType.Type }}" sizes="{{- $size -}}x{{- $size -}}" href="{{ .RelPermalink }}" />{{ end }}{{ end }}
+

@@ -1,25 +1,33 @@
 <style>
-details h4 {
+details summary {
   display: block;
+  font:
+	3rem "Open Sans",
+	sans-serif;
+  font-weight: bold;
 }
 
-details h4:hover, details h4:active{
+details summary p {
+    display: inline;
+}
+
+details summary:hover, details summary:active{
 	color: #3d8df5;
 	cursor: pointer;
 }
 
-details h4::before {
+details summary::before {
 	margin-right: 0.5rem;
 	padding: 0.3rem;
 	display: inline-block;
 	transition: 0.7s;
 	content: '\203A'; /* chevron */
 }
-details[open] h4 {
+details[open] summary {
 	color: #0c6ce9;
 }
 
-details[open] h4::before {
+details[open] summary::before {
   transform: rotate(90deg);
   margin-bottom: 0.5rem;
 }
@@ -30,6 +38,6 @@ document.querySelectorAll('details').forEach((D,_,A)=>{
 })
 </script>
 <details>
-  <summary><h4>{{ (.Get 0) | markdownify }}</h4></summary>
+  <summary><p>{{ (.Get 0) | markdownify }}</p></summary>
   {{ .Inner | markdownify }}
 </details>
