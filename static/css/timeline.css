@@ -1,7 +1,7 @@
 <style>
 /* The actual timeline (the vertical ruler) */
 .timeline {
-  position: relative;
+  position: absolute;
   max-width:700px; 
   margin: 0 auto;
 }
@@ -20,6 +20,7 @@
 
 /* timelineend */
 .timelineend {
+    position: relative;
 	overflow: hidden;
       width: 100%;
 }
