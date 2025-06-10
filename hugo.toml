@@ -10,7 +10,7 @@ defaultContentLanguage = "de"
 theme = "hugo-scroll"
 
 # The "title" of your website
-title = "KFZ-Meisterbetrieb Naumann"
+title = "KFZ-Meisterbetrieb Naumann & Schreiner"
 
 # In order to add version information in the page's footer set to true.
 # enableGitInfo = true
@@ -39,10 +39,10 @@ enableEmoji = true
     # Another "title" :-). This one is used as the site_name on the Hugo's internal
     # opengraph structured data template.
     # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
-    title = "KFZ-Meisterbetrieb Naumann"
+    title = "KFZ-Meisterbetrieb Naumann & Schreiner"
 
     # The "description" of your website. This is used in the meta data of your generated html.
-    description = "Spitzöd 2 - 94060 Pocking"
+    description = "Gewerbepark 2a - 94099 Ruhstorf an der Rott"
 
     # Show a menu of languages available
     language_menu = false
@@ -77,7 +77,7 @@ enableEmoji = true
     showFooterLinks = true
 
     [params.meta]
-        keywords = "KFZ-Meisterbetrieb, KFZ, KFZ-Werkstatt, PKW, Auto, Werkstatt, Autowerkstatt, Reparatur, Autoreparatur, Pocking, Naumann, Spitzöd"
+        keywords = "KFZ-Meisterbetrieb, KFZ, KFZ-Werkstatt, PKW, Auto, Werkstatt, Autowerkstatt, Reparatur, Autoreparatur,Naumann, Schreiner, Pocking, Ruhstorf, Ruhstorf an der Rott"
 
     #[[params.contacts]]
     #    label = "phone"

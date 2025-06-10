@@ -5,10 +5,10 @@ weight: 1
 ---
 Angaben gemäß § 5 TMG
 
-<b>KFZ-Meisterbetrieb Naumann</b><br>
-Inh. Alexander Naumann<br>
-Spitzöd 2<br>
-94060 Pocking<br>
+<b>KFZ-Meisterbetrieb Naumann & Schreiner</b><br>
+Inh. Alexander Naumann und Vitali Schreiner<br>
+Gewerbepark 2a<br>
+94099 Ruhstorf an der Rott<br>
 Deutschland
 
 <b>Kontakt</b><br>

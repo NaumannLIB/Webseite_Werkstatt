@@ -1,6 +1,14 @@
 <div class="container left">
   <div class="content">
-    <h3>{{.Get "year"}}</h3>
+	{{ if ne (.Get "currentyear") ""}}
+	<h3 id='datetime'></h3>
+	<script>
+      // Get current date and time and insert into HTML
+      document.getElementById("datetime").innerHTML = new Date().getFullYear();
+    </script>
+	{{ else if ne (.Get "year") ""}}
+    <h3>{{(.Get "year")}}</h3>
+	{{end}}
     <p>{{.Inner}}</p>
   </div>
 </div>

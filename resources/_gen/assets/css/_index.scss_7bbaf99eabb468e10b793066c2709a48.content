@@ -40,8 +40,10 @@ body {
 
 /* ===== Cover =======*/
 #blog-logo {
-  position: relative;
-  width: 100%; }
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  line-height: 0; }
 
 #site-head.withCenteredImage {
   /* can't be used together with video */
@@ -54,8 +56,7 @@ body {
   height: 100%;
   margin-bottom: 0rem;
   text-align: center;
-  color: #fff;
-  background: #202021 no-repeat center center;
+  color: var(--cover-text-color);
   background-size: cover;
   /* Big cover video at the landing area */
   /** The arrow button to scroll to content */ }
@@ -78,7 +79,7 @@ body {
     width: fit-content; }
   #site-head .blog-title, #site-head.withCenteredImage .blog-title {
     margin: 10px 0 10px 0;
-    font-size: clamp(2rem, 8vw, 6.5rem);
+    font-size: 5rem;
     letter-spacing: -1px;
     text-shadow: var(--cover-title-text-shadow); }
   #site-head .blog-description, #site-head.withCenteredImage .blog-description {
@@ -132,7 +133,7 @@ body {
     font-size: 140px;
     margin: -10px auto;
     text-align: center;
-    position: absolute;
+    display: inline-block;
     width: 100%;
     left: 0;
     bottom: -120px;
@@ -167,9 +168,7 @@ a.fn-item {
   opacity: 0.7;
   text-decoration: none;
   color: white; }
-  a.fn-item:hover {
-    color: #3d8df5; }
-  a.fn-item.active {
+  a.fn-item:hover, a.fn-item.active {
     color: #0c6ce9; }
   a.fn-item.active {
     opacity: 1; }

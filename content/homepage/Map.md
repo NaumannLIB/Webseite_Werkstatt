@@ -11,8 +11,8 @@ header_menu: true
     <div class="floatrightmap">
 		Hier können Sie uns finden:<br><br>
 		<div class="address">
-		KFZ-Meisterbetrieb Naumann<br>
-		Spitzöd 2, 94060 Pocking<br><br>
+		KFZ-Meisterbetrieb Naumann & Schreiner<br>
+		Gewerbepark 2a, 94099 Ruhstorf an der Rott<br><br>
 		</div>
 	</div>
 </div>

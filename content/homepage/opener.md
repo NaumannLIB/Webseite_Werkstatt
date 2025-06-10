@@ -2,10 +2,10 @@
 title: "Willkommen"
 weight: 1
 ---
+<br>
+<center> Herzlich Willkommen auf der Webseite des KFZ-Meisterbetriebs <br> Naumann & Schreiner </center>
 
-Herzlich Willkommen auf der Webseite des KFZ-Meisterbetriebs Naumann.
-
-<img id="FotoWerkstatt" src="images/Werkstatt.jpg" alt="KFZ-Meisterbetrieb Naumann">
+<img id="FotoWerkstatt" src="images/Werkstatt.jpg" alt="KFZ-Meisterbetrieb Naumann & Schreiner">
 
 Die Transparenz gegenüber Ihnen, unseren Kunden ist uns besonders wichtig.
 Wir arbeiten sehr sorgfältig und sagen Ihnen, was an Ihrem Fahrzeug tatsächlich gemacht werden muss, was später erledigt werden kann und was nur optional ist.
