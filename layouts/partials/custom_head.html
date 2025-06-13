@@ -1,10 +1,25 @@
 <!-- A partial to be overwritten by the user.
      Its content will appear before the closing </head>-tag -->
-
+	<div id="umzug">
+	<h4>Achtung! Wir sind umgezogen, siehe neue Adresse unten!</h4>
+	</div>
 <!-- Custom CSS via inline styles
      You may use this template to add custom CSS to your site like so: -->
 
 <style>
+	#umzug {
+		display: block;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		color: white;
+		background-color: red;
+		position: sticky;
+		top: 0;
+		text-align: center;
+		max-width: 100vw;
+	}
+	
 	 /* Links */
      a:hover {
          color: #3154bd;
@@ -17,15 +32,16 @@
 	  width: 100%;
 	  height: auto;
 	}
-
+	
 	#site-head-content.inner {
 	  position: relative;
 	  margin-top: -15%;
 	  width: 80vw;
 	  max-width: 700px;
+	  hyphens: auto; 
 	}
 	
-	.blog-title {
+	#site-head .blog-title, #site-head.withCenteredImage .blog-title {
       font-size: clamp(2rem, 6vw, 5rem);
     }
 

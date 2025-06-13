@@ -34,7 +34,7 @@
 
 
 
-<link rel="stylesheet" href="../css/style.min.7a7070604c03cfb941913ed1d21bd8fd9644371b0481a40562b26ff40ce01edc.css" type="text/css" integrity="sha256-enBwYEwDz7lBkT7R0hvY/ZZENxsEgaQFYrJv9AzgHtw=" />
+<link rel="stylesheet" href="../css/style.min.a783eb12f028880d59de86f7c1b69f5e72144a814a3fdd20e86ec9d756116b59.css" type="text/css" integrity="sha256-p4PrEvAoiA1Z3ob3wbafXnIUSoFKP90g6G7J11YRa1k=" />
 
 <meta property="og:url" content="https://kfznaumann.de/impressum/">
   <meta property="og:site_name" content="KFZ-Meisterbetrieb Naumann & Schreiner">
@@ -56,10 +56,25 @@
   <meta itemprop="image" content="https://kfznaumann.de/images/Vorschau_Webseite.png">
 
 
-
+	<div id="umzug">
+	<h4>Achtung! Wir sind umgezogen, siehe neue Adresse unten!</h4>
+	</div>
 
 
 <style>
+	#umzug {
+		display: block;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		color: white;
+		background-color: red;
+		position: sticky;
+		top: 0;
+		text-align: center;
+		max-width: 100vw;
+	}
+	
 	  
      a:hover {
          color: #3154bd;
@@ -72,15 +87,16 @@
 	  width: 100%;
 	  height: auto;
 	}
-
+	
 	#site-head-content.inner {
 	  position: relative;
 	  margin-top: -15%;
 	  width: 80vw;
 	  max-width: 700px;
+	  hyphens: auto; 
 	}
 	
-	.blog-title {
+	#site-head .blog-title, #site-head.withCenteredImage .blog-title {
       font-size: clamp(2rem, 6vw, 5rem);
     }
 

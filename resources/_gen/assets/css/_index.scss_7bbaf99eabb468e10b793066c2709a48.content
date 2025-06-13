@@ -575,9 +575,7 @@ table {
     width: 100%; }
   .inner,
   .pagination {
-    width: auto;
-    margin-left: 16px;
-    margin-right: 16px; }
+    width: auto; }
   .post {
     width: auto;
     margin-left: 16px;
