@@ -24,6 +24,6 @@ header_menu: true
         style="border:0;border-radius: 10px;"
         loading="lazy"
         allowfullscreen
-        src="https://maps.googleapis.com/maps/embed/v1/place?q=place_id:ChIJGV_UreREdEcRQvHbq8Hgpj8&key=AIzaSyC34v01-N4HAZrM5u_MP2DtLJQPKGCjWRU&zoom=14&center=48.4036478,13.3264061">
-    </iframe> 
+        src="https://maps.googleapis.com/maps/embed/v1/place?q=place_id:ChIJGV_UreREdEcRQvHbq8Hgpj8&key=AIzaSyC34v01-N4HAZrM5u_MP2DtLJQPKGCjWRU&zoom=14">
+    </iframe>
 {{< /rawhtml >}}
