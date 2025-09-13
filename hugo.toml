@@ -18,6 +18,10 @@ title = "KFZ-Meisterbetrieb Naumann & Schreiner"
 # enable emoji processing in Markdown (valid only for pure markdown content)
 enableEmoji = true
 
+[security]
+  [security.funcs]
+    getenv = ["^HUGO_", "^CI$", "^GOOGLE_MAPS_API_KEY$"]
+
 # Theme-specific variables `.Site.Params.myParamName`
 [params]
 

@@ -1,0 +1,26 @@
+{{ $mapKey := getenv "GOOGLE_MAPS_API_KEY" }}
+<br>
+    <div class="wrap">
+        <div class="floatleftmap">
+            <img id="mappin" src="images/map-pin.png" />
+        </div>
+        <div class="floatrightmap">
+            Hier können Sie uns finden:<br><br>
+            <div class="address">
+            KFZ-Meisterbetrieb Naumann & Schreiner<br>
+            Gewerbepark 2a, 94099 Ruhstorf an der Rott<br><br>
+            </div>
+        </div>
+    </div>
+{{ if $mapKey }}
+    <iframe
+        width="100%"
+        height="525"
+        style="border:0;border-radius: 10px;"
+        loading="lazy"
+        allowfullscreen
+        src="https://maps.googleapis.com/maps/embed/v1/place?q=place_id:ChIJGV_UreREdEcRQvHbq8Hgpj8&key={{ $mapKey }}&zoom=14&center=48.4036478,13.3264061">
+    </iframe> 
+{{ else }}
+	<p>Maps API Key ist nicht gesetzt.</p>
+{{ end }}
