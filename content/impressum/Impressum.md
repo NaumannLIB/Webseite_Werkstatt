@@ -14,7 +14,7 @@ Deutschland
 <b>Kontakt</b><br>
 Telefon: +49 (0) 151 22691646<br>
 E-Mail: alex_naumann@live.de<br>
-Internet: www.kfznaumann.de
+Internet: www.kfz-naumann-schreiner.de
 
 <b>Verantwortlicher für die Webseite</b><br>
 Robert Naumann<br>
